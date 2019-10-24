@@ -45,7 +45,7 @@ if(!fs.existsSync(path.join(homedir, 'timet.json'))){
 } else {
   var runner = false
   
-  if (!runner && (args['reportsTags'] || args['reportGraphics'])) {
+  if (!runner && (args['reportTags'] || args['reportGraphics'])) {
     runner = true;
     lib.report(
       {
