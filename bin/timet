@@ -44,6 +44,21 @@ if(!fs.existsSync(path.join(homedir, 'timet.json'))){
   })
 } else {
   var runner = false
+  
+  if (!runner && (args['reportsTags'] || args['reportGraphics'])) {
+    runner = true;
+    lib.report(
+      {
+        reportTags:args['reportsTags'],
+        reportGraphics:args['reportGraphics'],
+        startDate: args['startDate'],
+        endDate: args['endDate']
+      },function(err){
+      if(err) console.log(err)
+      process.exit()
+    })
+  }
+  
   if(!runner && args['jira-login'] && args['jira-host']) {
     runner = true
     lib.jiraConfiguration(function(err){
