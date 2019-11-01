@@ -36,8 +36,6 @@
     "terminal"
   ],
   "dependencies": {
-    "blessed": "^0.1.81",
-    "blessed-contrib": "^4.8.18",
     "cli-spinner": "^0.2.6",
     "colors": "^1.1.2",
     "hash": "^0.2.1",
