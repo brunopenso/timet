@@ -84,6 +84,20 @@ To remove a register you need to enter the date and the register id:
 timet remove 4/7/2017 7
 ```
 
+### Tags Report
+
+To get a simple report by tags, use:
+
+```shell
+timet --startDate 28/10/2019 --endDate 01/11/2019 --reportTags
+```
+
+or use like this to get the last 30 days
+
+```shell
+timet --reportTags
+```
+
 ### Integrations
 
 Integrations are ideas for when you are recording a new note Time Tracker makes a launch in your management and project tool.

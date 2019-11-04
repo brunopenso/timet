@@ -49,7 +49,7 @@ if(!fs.existsSync(path.join(homedir, 'timet.json'))){
     runner = true;
     lib.report(
       {
-        reportTags:args['reportsTags'],
+        reportTags:args['reportTags'],
         reportGraphics:args['reportGraphics'],
         startDate: args['startDate'],
         endDate: args['endDate']
