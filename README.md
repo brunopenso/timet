@@ -76,7 +76,7 @@ You can generate an output in the txt file by passing the `--report` parameter:
 timet 2/20/2017 3/20/2017 --report
 ```
 
-### Remove register
+### t ove register
 
 To remove a register you need to enter the date and the register id:
 
